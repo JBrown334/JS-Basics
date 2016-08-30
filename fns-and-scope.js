@@ -12,7 +12,14 @@ var name = 'Tyler';
       return false;
     }
   }
-
+  
+  /*G: 
+    Good, however you could eliminate the else statement here.
+    Because return immediately exits the function, if we evaluate 'name === "tyler"' and 
+    it's TRUE then we hit the 'return true'  statement and immediately exit.  If it ISN't true
+    then we can simply exit the function by returning false. Else statment is just wasted lines! :)
+  */
+  
 //////////////////PROBLEM 2////////////////////
 
 
@@ -24,6 +31,8 @@ var name = 'Tyler';
     return answer;
   }
 
+//G: Works perfect. If you wanted to make it a little more efficient you could simply return the prompt like so:
+// return prompt("What is your name?");
 
 //////////////////PROBLEM 3////////////////////
 
@@ -36,7 +45,7 @@ var name = 'Tyler';
     var name = getName();
     alert('Welcome, ' + name);
   }
-
+//G: Perfecto.
 
 //////////////////PROBLEM 4////////////////////
 
@@ -47,6 +56,9 @@ var name = 'Tyler';
 
   //parameters are variables of a function, arguments are passed in to be evaluated by the function//
 
+//G: You got the idea. It's kind of a hard thing to articulate. 
+//G: A parameter is the variable which is part of the function’s signature (function declaration).
+//G: Arguments like you say are what gets passed into the function in place of those parameters when the function is invoked.
 
 //////////////////PROBLEM 5////////////////////
 
@@ -63,6 +75,7 @@ undefined
 null
 */
 
+//G: Nice, gotta catch'em all! :)
 
 
 //////////////////PROBLEM 6////////////////////
@@ -74,15 +87,14 @@ null
 function myName(){
     return "Joe";
   }
-
+//G: Not so hard eh?
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
 var newMyName = myName;
 
-newMyName();
-
+//G: Nailed it!
 
 
 //////////////////PROBLEM 7////////////////////
@@ -98,9 +110,13 @@ newMyName();
     }
   }
 
+//G: Yes! Exactly right. This is an example of a very simple closure.
+
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
 var innerFn = outerFn();
 //Now invoke innerFn.
 innerFn();
+
+//G: Good job man! Javascript is fun amirite? :D
